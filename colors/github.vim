@@ -20,85 +20,85 @@ if version > 580
 endif
 let g:colors_name="github"
 
-hi Normal       guifg=#000000 guibg=#F8F8FF
+hi Normal       guifg=#000000 guibg=#F8F8FF ctermfg=16 ctermbg=255
 
 " {{{ Cursor
-hi Cursor		guibg=#444454 guifg=#F8F8FF
-hi CursorLine	guibg=#D8D8DD
-hi CursorColumn	guibg=#E8E8EE
+hi Cursor		guibg=#444454 guifg=#F8F8FF ctermbg=238 ctermfg=254
+hi CursorLine	guibg=#D8D8DD ctermbg=254 cterm=none gui=none
+hi CursorColumn	guibg=#E8E8EE ctermbg=254
 " }}}
 
 " {{{ Diff
-hi DiffAdd         guifg=#003300 guibg=#DDFFDD gui=none
-hi DiffChange                    guibg=#ececec gui=none
-hi DiffText        guifg=#000033 guibg=#DDDDFF gui=none
-hi DiffDelete      guifg=#DDCCCC guibg=#FFDDDD gui=none
+hi DiffAdd         guifg=#003300 guibg=#DDFFDD gui=none ctermfg=22 ctermbg=194 cterm=none
+hi DiffChange                    guibg=#ececec gui=none ctermbg=253 cterm=none cterm=none
+hi DiffText        guifg=#000033 guibg=#DDDDFF gui=none ctermfg=17 ctermbg=253 cterm=none
+hi DiffDelete      guifg=#DDCCCC guibg=#FFDDDD gui=none ctermfg=252 ctermbg=224 cterm=none
 " }}}
 
 " {{{ Folding / Line Numbering / Status Lines
-hi Folded		guibg=#ECECEC guifg=#808080 gui=bold
-hi vimFold		guibg=#ECECEC guifg=#808080 gui=bold
-hi FoldColumn	guibg=#ECECEC guifg=#808080 gui=bold
+hi Folded		guibg=#ECECEC guifg=#808080 gui=bold ctermfg=244 ctermbg=253 cterm=bold
+hi vimFold		guibg=#ECECEC guifg=#808080 gui=bold ctermfg=244 ctermbg=253 cterm=bold
+hi FoldColumn	guibg=#ECECEC guifg=#808080 gui=bold ctermfg=244 ctermbg=253 cterm=bold
 
-hi LineNr		guifg=#959595 guibg=#ECECEC gui=bold
-hi NonText		guifg=#808080 guibg=#ECECEC
-hi Folded		guifg=#808080 guibg=#ECECEC gui=bold
-hi FoldeColumn  guifg=#808080 guibg=#ECECEC gui=bold
+hi LineNr		guifg=#959595 guibg=#ECECEC gui=bold ctermfg=246 ctermbg=253 cterm=bold
+hi NonText		guifg=#808080 guibg=#ECECEC ctermfg=244 ctermbg=253
+hi Folded		guifg=#808080 guibg=#ECECEC gui=bold ctermfg=244 ctermbg=253 cterm=bold
+hi FoldeColumn  guifg=#808080 guibg=#ECECEC gui=bold ctermfg=244 ctermbg=253 cterm=bold
 
-hi VertSplit	guibg=#bbbbbb guifg=#bbbbbb gui=none
-hi StatusLine   guibg=#bbbbbb guifg=#404040 gui=bold
-hi StatusLineNC guibg=#d4d4d4 guifg=#404040 gui=italic
+hi VertSplit	guibg=#bbbbbb guifg=#bbbbbb gui=none ctermfg=250 ctermbg=250 cterm=none
+hi StatusLine   guibg=#bbbbbb guifg=#404040 gui=bold ctermfg=238 ctermbg=250 cterm=bold
+hi StatusLineNC guibg=#d4d4d4 guifg=#404040 gui=italic ctermbg=252 ctermfg=238 cterm=none
 " }}}
 
 " {{{ Misc
-hi ModeMsg		guifg=#990000
-hi MoreMsg		guifg=#990000
+hi ModeMsg		guifg=#990000 ctermfg=88
+hi MoreMsg		guifg=#990000 ctermfg=88
 
-hi Title		guifg=#ef5939
-hi WarningMsg	guifg=#ef5939
-hi SpecialKey   guifg=#177F80 gui=italic
+hi Title		guifg=#ef5939 ctermfg=166
+hi WarningMsg	guifg=#ef5939 ctermfg=166
+hi SpecialKey   guifg=#177F80 gui=italic ctermfg=23 cterm=italic
 
-hi MatchParen	guibg=#cdcdfd guifg=#000000
-hi Underlined	guifg=#000000 gui=underline
-hi Directory	guifg=#990000
+hi MatchParen	guibg=#cdcdfd guifg=#000000 ctermbg=189 ctermfg=16
+hi Underlined	guifg=#000000 gui=underline ctermfg=16 cterm=underline
+hi Directory	guifg=#990000 ctermfg=88
 " }}}
 
 " {{{ Search, Visual, etc
-hi Visual		guifg=#FFFFFF guibg=#3465a4 gui=none
-hi VisualNOS    guifg=#FFFFFF guibg=#204a87 gui=none
-hi IncSearch	guibg=#cdcdfd guifg=#000000 gui=italic
-hi Search		guibg=#cdcdfd guifg=#000000 gui=italic
+hi Visual		guifg=#FFFFFF guibg=#3465a4 gui=none ctermbg=25 ctermfg=231 cterm=none
+hi VisualNOS    guifg=#FFFFFF guibg=#204a87 gui=none ctermbg=24 ctermfg=231 cterm=none
+hi IncSearch	guibg=#cdcdfd guifg=#000000 gui=italic ctermbg=189 ctermfg=16 cterm=italic
+hi Search		guibg=#cdcdfd guifg=#000000 gui=italic ctermbg=189 ctermfg=16 cterm=italic
 " }}}
 
 " {{{ Syntax groups
-hi Ignore		guifg=#808080
-hi Identifier	guifg=#0086B3
-hi PreProc		guifg=#A0A0A0 gui=bold
-hi Comment		guifg=#999988
-hi Constant		guifg=#177F80 gui=none
-hi String		guifg=#D81745
-hi Function		guifg=#990000 gui=bold
-hi Statement	guifg=#000000 gui=bold
-hi Type			guifg=#445588 gui=bold
-hi Number		guifg=#1C9898
-hi Todo			guifg=#FFFFFF guibg=#990000 gui=bold
-hi Special		guifg=#159828 gui=bold
-hi rubySymbol   guifg=#960B73
-hi Error        guibg=#f8f8ff guifg=#ff1100 gui=undercurl
-hi Todo         guibg=#f8f8ff guifg=#ff1100 gui=underline
-hi Label        guifg=#000000 gui=bold
-hi StorageClass guifg=#000000 gui=bold
-hi Structure    guifg=#000000 gui=bold
-hi TypeDef      guifg=#000000 gui=bold
+hi Ignore		guifg=#808080 ctermfg=238
+hi Identifier	guifg=#0086B3 ctermfg=32
+hi PreProc		guifg=#A0A0A0 gui=bold ctermfg=247 cterm=bold
+hi Comment		guifg=#999988 ctermfg=245
+hi Constant		guifg=#177F80 gui=none ctermfg=23 cterm=none
+hi String		guifg=#D81745 ctermfg=124
+hi Function		guifg=#990000 gui=bold ctermfg=88 cterm=bold
+hi Statement	guifg=#000000 gui=bold ctermfg=16 cterm=bold
+hi Type			guifg=#445588 gui=bold ctermfg=24 cterm=bold
+hi Number		guifg=#1C9898 ctermfg=23
+hi Todo			guifg=#FFFFFF guibg=#990000 gui=bold ctermbg=88 ctermfg=231 cterm=bold
+hi Special		guifg=#159828 gui=bold ctermfg=28 cterm=bold
+hi rubySymbol   guifg=#960B73 ctermfg=89
+hi Error        guibg=#f8f8ff guifg=#ff1100 gui=undercurl ctermbg=254 ctermfg=196 cterm=underline
+hi Todo         guibg=#f8f8ff guifg=#ff1100 gui=underline ctermbg=254 ctermfg=196 cterm=bold,underline
+hi Label        guifg=#000000 gui=bold ctermfg=16 cterm=bold
+hi StorageClass guifg=#000000 gui=bold ctermfg=16 cterm=bold
+hi Structure    guifg=#000000 gui=bold ctermfg=16 cterm=bold
+hi TypeDef      guifg=#000000 gui=bold ctermfg=16 cterm=bold
 " }}}
 
 " {{{ Completion menus
-hi WildMenu     guifg=#7fbdff guibg=#425c78 gui=none
+hi WildMenu     guifg=#7fbdff guibg=#425c78 gui=none ctermbg=60 ctermfg=117 cterm=none
 
-hi Pmenu        guibg=#808080 guifg=#ffffff gui=bold
-hi PmenuSel     guibg=#cdcdfd guifg=#000000 gui=italic
-hi PmenuSbar    guibg=#000000 guifg=#444444
-hi PmenuThumb   guibg=#aaaaaa guifg=#aaaaaa
+hi Pmenu        guibg=#808080 guifg=#ffffff gui=bold ctermbg=244 ctermfg=231 cterm=bold
+hi PmenuSel     guibg=#cdcdfd guifg=#000000 gui=italic ctermbg=189 ctermfg=16 cterm=italic
+hi PmenuSbar    guibg=#000000 guifg=#444444 ctermbg=16 ctermfg=238
+hi PmenuThumb   guibg=#aaaaaa guifg=#aaaaaa ctermbg=247 ctermfg=247
 " }}}
 
 " {{{ Spelling
@@ -131,9 +131,9 @@ hi link schemeFunc      Statement
 " }}}
 
 " {{{ Tabs (non-gui0
-hi TabLine		guifg=#404040 guibg=#dddddd gui=none
-hi TabLineFill	guifg=#404040 guibg=#dddddd gui=none
-hi TabLineSel	guifg=#404040 gui=bold
+hi TabLine		guifg=#404040 guibg=#dddddd gui=none ctermfg=238 ctermbg=253 cterm=none
+hi TabLineFill	guifg=#404040 guibg=#dddddd gui=none ctermfg=238 ctermbg=253 cterm=none
+hi TabLineSel	guifg=#404040 gui=bold ctermfg=238 ctermbg=250 cterm=bold
 " }}}
 "
 " vim: sw=4 ts=4 foldmethod=marker
