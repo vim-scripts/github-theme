@@ -40,14 +40,16 @@ hi Folded		guibg=#ECECEC guifg=#808080 gui=bold ctermfg=244 ctermbg=253 cterm=bo
 hi vimFold		guibg=#ECECEC guifg=#808080 gui=bold ctermfg=244 ctermbg=253 cterm=bold
 hi FoldColumn	guibg=#ECECEC guifg=#808080 gui=bold ctermfg=244 ctermbg=253 cterm=bold
 
-hi LineNr		guifg=#959595 guibg=#ECECEC ctermfg=246 ctermbg=253 cterm=bold
-hi NonText		guifg=#808080 guibg=#ECECEC ctermfg=244 ctermbg=253
-hi Folded		guifg=#808080 guibg=#ECECEC gui=bold ctermfg=244 ctermbg=253 cterm=bold
-hi FoldeColumn  guifg=#808080 guibg=#ECECEC gui=bold ctermfg=244 ctermbg=253 cterm=bold
+hi LineNr		guifg=#babbb6 guibg=#FFFFFF ctermfg=246 ctermbg=253 cterm=bold
+hi NonText		guifg=#808080 guibg=#FFFFFF ctermfg=244 ctermbg=253
+hi Folded		guifg=#808080 guibg=#FFFFFF gui=bold ctermfg=244 ctermbg=253 cterm=bold
+hi FoldeColumn  guifg=#808080 guibg=#FFFFFF gui=bold ctermfg=244 ctermbg=253 cterm=bold
 
 hi VertSplit	guibg=#bbbbbb guifg=#bbbbbb gui=none ctermfg=250 ctermbg=250 cterm=none
 hi StatusLine   guibg=#bbbbbb guifg=#404040 gui=bold ctermfg=238 ctermbg=250 cterm=bold
 hi StatusLineNC guibg=#d4d4d4 guifg=#404040 gui=italic ctermbg=252 ctermfg=238 cterm=none
+
+hi SignColumn guibg=#FFFFFF
 " }}}
 
 " {{{ Misc
