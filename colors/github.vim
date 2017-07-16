@@ -20,10 +20,10 @@ if version > 580
 endif
 let g:colors_name="github"
 
-hi Normal       guifg=#000000 guibg=#F8F8FF ctermfg=16 ctermbg=255
+hi Normal       guifg=#000000 guibg=#FFFFFF ctermfg=16 ctermbg=255
 
 " {{{ Cursor
-hi Cursor		guibg=#444454 guifg=#F8F8FF ctermbg=238 ctermfg=254
+hi Cursor		guibg=#444454 guifg=#FFFFFF ctermbg=238 ctermfg=254
 hi CursorLine	guibg=#D8D8DD ctermbg=254 cterm=none gui=none
 hi CursorColumn	guibg=#E8E8EE ctermbg=254
 " }}}
@@ -40,7 +40,7 @@ hi Folded		guibg=#ECECEC guifg=#808080 gui=bold ctermfg=244 ctermbg=253 cterm=bo
 hi vimFold		guibg=#ECECEC guifg=#808080 gui=bold ctermfg=244 ctermbg=253 cterm=bold
 hi FoldColumn	guibg=#ECECEC guifg=#808080 gui=bold ctermfg=244 ctermbg=253 cterm=bold
 
-hi LineNr		guifg=#959595 guibg=#ECECEC gui=bold ctermfg=246 ctermbg=253 cterm=bold
+hi LineNr		guifg=#959595 guibg=#ECECEC ctermfg=246 ctermbg=253 cterm=bold
 hi NonText		guifg=#808080 guibg=#ECECEC ctermfg=244 ctermbg=253
 hi Folded		guifg=#808080 guibg=#ECECEC gui=bold ctermfg=244 ctermbg=253 cterm=bold
 hi FoldeColumn  guifg=#808080 guibg=#ECECEC gui=bold ctermfg=244 ctermbg=253 cterm=bold
@@ -72,24 +72,26 @@ hi Search		guibg=#cdcdfd guifg=#000000 gui=italic ctermbg=189 ctermfg=16 cterm=i
 
 " {{{ Syntax groups
 hi Ignore		guifg=#808080 ctermfg=238
-hi Identifier	guifg=#0086B3 ctermfg=32
-hi PreProc		guifg=#A0A0A0 gui=bold ctermfg=247 cterm=bold
-hi Comment		guifg=#999988 ctermfg=245
+hi Identifier	guifg=#24292e ctermfg=32
+hi PreProc		guifg=#A0A0A0 ctermfg=247 cterm=bold
+hi Comment		guifg=#6a737d ctermfg=245
 hi Constant		guifg=#177F80 gui=none ctermfg=23 cterm=none
-hi String		guifg=#D81745 ctermfg=124
-hi Function		guifg=#990000 gui=bold ctermfg=88 cterm=bold
-hi Statement	guifg=#000000 gui=bold ctermfg=16 cterm=bold
-hi Type			guifg=#445588 gui=bold ctermfg=24 cterm=bold
-hi Number		guifg=#1C9898 ctermfg=23
-hi Todo			guifg=#FFFFFF guibg=#990000 gui=bold ctermbg=88 ctermfg=231 cterm=bold
-hi Special		guifg=#159828 gui=bold ctermfg=28 cterm=bold
+hi String		guifg=#032f62 ctermfg=124
+hi Function		guifg=#005cc5 ctermfg=88 cterm=bold
+hi Statement	guifg=#d73a49 gui=none ctermfg=16
+hi Keyword	    guifg=#d73a49 gui=none ctermfg=16
+hi Type			guifg=#d73a49 gui=none ctermfg=24 cterm=bold
+hi Number		guifg=#005cc5 gui=none ctermfg=23
+hi Boolean		guifg=#005cc5 gui=none ctermfg=23
+hi Todo			guifg=#FFFFFF ctermfg=231 cterm=bold
+hi Special		guifg=#159828 ctermfg=28 cterm=bold
 hi rubySymbol   guifg=#960B73 ctermfg=89
-hi Error        guibg=#f8f8ff guifg=#ff1100 gui=undercurl ctermbg=254 ctermfg=196 cterm=underline
-hi Todo         guibg=#f8f8ff guifg=#ff1100 gui=underline ctermbg=254 ctermfg=196 cterm=bold,underline
-hi Label        guifg=#000000 gui=bold ctermfg=16 cterm=bold
-hi StorageClass guifg=#000000 gui=bold ctermfg=16 cterm=bold
-hi Structure    guifg=#000000 gui=bold ctermfg=16 cterm=bold
-hi TypeDef      guifg=#000000 gui=bold ctermfg=16 cterm=bold
+hi Error        guibg=#ffffff guifg=#ff1100 gui=undercurl ctermbg=254 ctermfg=196 cterm=underline
+hi Todo         guibg=#ffffff guifg=#ff1100 gui=underline ctermbg=254 ctermfg=196 cterm=bold,underline
+hi Label        guifg=#000000 ctermfg=16 cterm=bold
+hi StorageClass guifg=#000000 ctermfg=16 cterm=bold
+hi Structure    guifg=#d73a49 ctermfg=16 cterm=bold
+hi TypeDef      guifg=#000000 ctermfg=16 cterm=bold
 " }}}
 
 " {{{ Completion menus
